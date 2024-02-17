@@ -46,6 +46,18 @@ let api_data;
 const xhr = new XMLHttpRequest();
 
 
+
+function send_api(){
+    if (xhr.readyState === 4) {
+        api_data = JSON.parse(this.responseText);
+        // logic
+        avatar.setAttribute("src",api_data.avatar_url);
+        login_id.innerText = api_data.login;
+        name.innerText = api_data.name;
+        followers.innerText = api_data.followers;
+        repos.innerText = api_data.public_repos;
+    }
+}
 search_btn.addEventListener("click",()=>{
     search_text =search_box.value;
     reqUrl = "https://api.github.com/users/"+search_text;
@@ -58,23 +70,11 @@ search_btn.addEventListener("click",()=>{
         window.location.reload();
             })
         });
-        //open api-request
         xhr.open('GET',reqUrl);
 
-        xhr.onreadystatechange = function (){
-            if (xhr.readyState === 4) {
-                api_data = JSON.parse(this.responseText);
-                // logic
-                avatar.setAttribute("src",api_data.avatar_url);
-                login_id.innerText = api_data.login;
-                name.innerText = api_data.name;
-                followers.innerText = api_data.followers;
-                repos.innerText = api_data.public_repos;
-            }
-        }
-        //send api request
+        xhr.onreadystatechange = send_api;
+
         xhr.send();
-        
     }
 })
 
