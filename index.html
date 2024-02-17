@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Github-card</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Kode+Mono:wght@400..700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="" id="search-area">
+        <input type="text" id="search-box" autofocus placeholder="Enter Github user-name">
+        <button type="submit" id="search-btn">Generate Card</button>
+    </div>
+    <div class="hidden" id="error-div">
+        <div id="error-box">Got an Error <br> No User on Github</div>
+        <button type="reset" class="relod">Retry</button>
+    </div>
+    <main>
+        <img src="assets/test.jpg" alt="avatar" id="avatar">
+        <div id="login-id" class="mono-font">@login-id</div>
+        <div id="user-name">User-Name</div>
+        <div id="block">
+            <div class="stats">
+                <img src="assets/book-copy.svg" alt="followers-icon" class="icons">
+                <div id="int-followers" class="metrics">X</div>
+            </div>
+            <div class="stats">
+                <img src="assets/user-round-check.svg" alt="followers-icon" class="icons">
+                <div id="int-repos" class="metrics">X</div>
+            </div>
+        </div>
+    </main>
+    <button class="relod" type="reset">Relod</button>
+    <footer>
+        <div id="author">Made by<span class="author-mono">0X5B3A</span></div>
+        <div id="links">
+            <a href="https://twitter.com/0x5b3a" target="_blank" rel="noopener noreferrer" class="f-icons"><img src="assets/twitter.svg" alt="" ></a>
+            
+            <a href="http://github.com/0x5b3a" target="_blank" rel="noopener noreferrer" class="f-icons"><img src="assets/github.svg" alt="" ></a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
