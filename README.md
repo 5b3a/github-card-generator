@@ -6,4 +6,4 @@ As the name suggest this site will generate a card like html page for the given 
 
 This projects was made by following the assignment of [Hitesh Sir's](https://github.com/hiteshchoudhary) - [Javascript lecture 39 API and V8](https://youtu.be/pDPAcYdSse8?si=_6xg5vXkb3yXbSiV)
 
-<code style="color : black">Made with ~~❤️ love~~ 💻 by 0X5B3A</code>.
+<code style="color : black">Made with ~~❤️ love~~ 💻 by 0X5B3A</code>
