@@ -62,7 +62,8 @@ body{
     height: auto;
     width: 100svw;
 
-    padding: 2svw;
+    padding:2svw ;
+    padding-bottom: 0.5svw;
 
 }
 
@@ -87,7 +88,7 @@ main{
 
 footer{
     height: auto;
-    width: 40svw;
+    width: 100svw;
 
     /* background: var(--purple); */
 
@@ -102,8 +103,11 @@ footer{
     margin-top: 1svw;
     padding-top: 0.5svw;
 }
-
-span{
+strike{
+    padding-left: 0.5svw;
+    padding-right: 0.5svw;
+}
+.span-auth{
     margin-left: 1svh;
     color: hsl(120, 100%, 50%);
 }
