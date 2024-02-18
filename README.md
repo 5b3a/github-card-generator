@@ -1,4 +1,4 @@
-#(GitHub pages link)[https://0x5b3a.github.io/github-card-generator/]
+#https://0x5b3a.github.io/github-card-generator/
 
 As the name suggest this site will generate a card like html page for the given username **Assuming the username exists on github**. else it will generate card with *null* & *undefined* values.  
 
